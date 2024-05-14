@@ -1,0 +1,99 @@
+html{
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    margin: 0;
+}
+body{
+    background-color:hsl(210, 46%, 95%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+
+}
+.container{
+    width: 88vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 45%;
+    justify-content: space-between;
+}
+.daniel{
+    flex-basis: 68%;
+    background-color: hsl(263, 55%, 52%);
+}
+.walters{
+    flex-basis: 29%;
+    background-color:hsl(217, 19%, 35%);
+}
+.patrick{
+    flex-basis: 68%;
+    background-color: hsl(219, 29%, 14%);
+}
+.harmon{
+    flex-basis: 29%;
+    background-color:hsl(0, 0%, 100%);
+}
+.kira{
+    flex-grow: 1;
+    background-color:hsl(0, 0%, 100%);
+}
+.kira,.daniel,.walters,.harmon,.patrick{border-radius: 10px; box-shadow: 0px 0px 1px gray;}
+.person{
+    display: flex;
+    margin: 20px;
+    margin-left: 40px;
+    align-items: center;
+}
+.daniel .person{margin-right: 60%;}
+img{
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-right: 15px;
+    border-radius: 100%;
+}
+.patrick img , .daniel img{border: 2px solid hsl(263, 77%, 69%);}
+.name{
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    font-size: 1.2rem;
+}
+.undername{
+    margin: 0;  
+    color: hsl(0, 0%, 100%,50%);
+}
+.harmon .name, .kira .name{color: hsl(217, 19%, 35%);font-weight: 500;}
+.harmon .undername, .kira .undername{color: hsl(217, 19%, 35%,50%);}
+.kira .head{
+    font-weight: 600;
+    color: hsl(217, 19%, 35%);
+    font-size: 1.5rem;
+    max-inline-size: 80%;
+    text-align: justify center;
+}
